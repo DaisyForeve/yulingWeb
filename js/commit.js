@@ -36,6 +36,28 @@ $(function () {
         // effect: 'cube',
     })
 
+    // 新闻咨询
+    new Swiper('.slider-open', {
+        loop: true,
+        autoplay: true,
+        speed: 1000,
+        slidesPerView: 3,
+        pagination: {
+            el: '.slider-open .swiper-pagination'
+        }
+    })
+
+    new Swiper('.news-slider', {
+        loop: true,
+        autoplay: true,
+        speed: 1000,
+        slidesPerView: 3,
+        navigation: {
+            nextEl: '.news-slider .swiper-button-next',
+            prevEl: '.news-slider .swiper-button-prev',
+        },
+    })
+
     var coreSwiper = new Swiper('.service_swiper', {
         slidesPerView: 3,
         spaceBetween: 30,

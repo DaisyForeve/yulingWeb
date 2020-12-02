@@ -997,3 +997,246 @@ footer {
     position: relative;
     z-index: 99;
 }
+
+/* 新闻资讯 */
+.news-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -90px;
+    z-index: 1;
+}
+
+.news-container .news-open,
+.news-container .news-work {
+    width: 40%;
+    min-height: 300px;
+    border-radius: 9px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.news-container .news-work {
+    width: 58%;
+}
+
+.news-container .headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.news-container .headline h3 {
+    display: inline-block;
+    font-size: 18px;
+    color: #333;
+}
+
+.news-container .headline .more {
+    font-size: 14px;
+    color: #666;
+}
+
+.news-container .headline .more:hover {
+    text-decoration: underline;
+}
+
+.news-container .slider-open {
+    position: relative;
+    padding-bottom: 35px;
+    overflow: hidden;
+}
+
+.slider-open .news-item {
+    width: 85%;
+    padding: 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #e9e9e9;
+}
+
+.slider-open .news-item .news-img {
+    text-align: center;
+}
+
+.news-img img {
+    width: 100%;
+}
+
+.slider-open .news-item p {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.news-pagination .swiper-pagination-bullet {
+    width: 20px;
+    height: 4px;
+    margin: 0 10px !important;
+    border-radius: 0;
+    background-color: #8d8d8d;
+}
+
+.news-pagination .swiper-pagination-bullet-active {
+    background-color: #00d46f;
+}
+
+.news-container .work-list li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    padding-left: 12px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #b8b6b6;
+}
+
+.news-container .work-list li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 6px;
+    height: 2px;
+    margin-top: -8px;
+    background-color: #8d8d8d;
+}
+
+.news-container .work-list li:hover a,
+.news-container .work-list li:hover .time {
+    color: rgb(59, 126, 85);
+}
+
+.news-container .work-list li p {
+    display: inline-block;
+    width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.news-container .work-list li p a {
+    font-size: 14px;
+    color: #8d8d8d
+}
+
+.slider-container {
+    padding-top: 80px;
+}
+
+.slider-container h2 {
+    font-size: 32px;
+    color: #666;
+    text-align: center;
+}
+
+.slider-container h4 {
+    margin-top: 35px;
+    font-size: 32px;
+    color: rgb(59, 126, 85);
+    text-align: center;
+}
+
+.slider-container .news-slider {
+    position: relative;
+    width: 100%;
+    margin-top: 60px;
+    padding-bottom: 20px;
+    padding-top: 100px;
+}
+
+.slider-item {
+    position: relative;
+}
+
+.slider-item .slider-marker {
+    position: absolute;
+    width: 320px;
+    height: 100%;
+    background-color: rgb(59, 126, 85);;
+}
+
+.slider-marker h5 {
+    margin: 33px;
+    color: #fff;
+    font-size: 38px;
+}
+
+.slider-marker h5 .small {
+    margin-right: 10px;
+    font-size: 26px;
+}
+
+.slider-item .swiper-button-prev {
+    width: 50px;
+    height: 60px;
+    top: 30px;
+    left: 1140px;
+    background: url('../images/left.png') no-repeat;
+    background-size: 100%;
+    outline: none;
+}
+
+.slider-item .swiper-button-next {
+    width: 50px;
+    height: 60px;
+    top: 30px;
+    right: 20px;
+    background: url('../images/right.png') no-repeat;
+    background-size: 100%;
+    outline: none;
+}
+
+.slider-container .news-slider .news-slider-info {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.news-slider .index_news_item {
+    min-height: 470px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+}
+
+.news-slider-info .title,
+.news-slider-info .sub-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.news-slider-info .sub-title {
+    font-size: 16px;
+}
+
+.news-slider-info .summary {
+    font-size: 13px;
+    color: #8d8d8d;
+    line-height: 1.6;
+}
+
+.slider-item-bottom {
+    margin-top: 30px;
+}
+
+.slider-item-bottom .slider-marker {
+    right: 0;
+}
+
+.slider-item-bottom .swiper-button-prev {
+    left: 0;
+}
+
+.slider-item-bottom .swiper-button-next {
+    right: 1160px;
+}
